@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom to image | CDN</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.js"
+      integrity="sha512-wUa0ktp10dgVVhWdRVfcUO4vHS0ryT42WOEcXjVVF2+2rcYBKTY7Yx7JCEzjWgPV+rj2EDUr8TwsoWF6IoIOPg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <style>
+      body {
+        background-color: #f6c28b;
+      }
+      #container {
+        padding: 10px;
+        border: 5px solid #e87676;
+        border-radius: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="box" style="display: inline-block">
+        <!-- Always paste your code here -->
+        <!-- <h1
+          style="
+            border: 2px solid salmon;
+            border-radius: 5px;
+            padding: 10px;
+            text-align: center;
+          "
+        >
+          Hello World
+        </h1> -->
+        <div class="base-component sc-bdVaJa cwoGMT" width="90.2185207511844" height="108.26330753449662" rotate="0" style="top: 119.693px; left: 284.891px; width: 90.2185px; height: 108.263px; transform: rotateZ(0deg);"><div class="image-component sc-htpNat enshqJ" width="90.2185207511844" height="108.26330753449662" style="width: 90.2185px; height: 108.263px;"><div class="sc-bxivhb fPcvdL"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="100%" height="100%" viewBox="16.66699981689453 10 66.66600036621094 80"><g fill="#ffffff"><path d="M16.667 43.33C16.667 69.104 37.559 90 63.333 90v-6.667c-22.093 0-40-17.91-40-40.003h-6.666z"></path><path d="M63.333 16.667c-14.729 0-26.666 11.94-26.666 26.664C36.667 58.06 48.604 70 63.333 70v6.667C44.922 76.667 30 61.741 30 43.33 30 24.922 44.922 10 63.333 10v6.667z"></path><path d="M63.333 43.333v20c-11.048 0-20-8.955-20-20.003 0-11.045 8.952-19.997 20-19.997 11.049 0 20 8.952 20 19.997l-20 .003z"></path></g></svg></div></div><div class="cursor-move sc-bwzfXH kvbLWh" width="90.2185207511844" height="108.26330753449662" style="width: 90.2185px; height: 108.263px;"></div></div>
+      </div>
+    </div>
+    <button id="dw_bt_Svg">Download SVG</button>
+    <button id="dw_bt_Png">Download PNG</button>
+    <button id="dw_bt_Jpeg">Download JPEG</button>
+    <script src="dom-to-image.js"></script>
+    <script>
+      var ticket = document.getElementById("box");
+      var download_button = document.getElementById("dw_bt_Svg");
+
+      download_button.addEventListener("click", () => {
+        domtoimage.toSvg(ticket).then((data) => {
+          var link = document.createElement("a");
+          link.download = "favicon.svg";
+          link.href = data;
+          link.click();
+        });
+      });
+    </script>
+    <script>
+      var ticket = document.getElementById("box");
+      var download_button = document.getElementById("dw_bt_Png");
+
+      download_button.addEventListener("click", () => {
+        domtoimage.toPng(ticket).then((data) => {
+          var link = document.createElement("a");
+          link.download = "favicon.png";
+          link.href = data;
+          link.click();
+        });
+      });
+    </script>
+    <script>
+      var ticket = document.getElementById("box");
+      var download_button = document.getElementById("dw_bt_Jpeg");
+
+      download_button.addEventListener("click", () => {
+        domtoimage.toJpeg(ticket).then((data) => {
+          var link = document.createElement("a");
+          link.download = "favicon.jpeg";
+          link.href = data;
+          link.click();
+        });
+      });
+    </script>
+  </body>
+</html>
