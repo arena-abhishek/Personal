@@ -9,7 +9,7 @@ body {
   align-items: center;
   height: 100vh;
   flex-direction: column;
-  background-color:white;
+  background-color:#fdfbfe;
 }
 .heading{
     margin: 45px;
@@ -30,6 +30,7 @@ body {
   margin-bottom: 20px;
   box-shadow: 0 3px 15px rgba(84, 84, 84, 0.781);
   text-align: right;
+  color: black;
 }
 #btn {
   display: grid;
