@@ -1,0 +1,62 @@
+*/ {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f1f0f7;
+  gap: 70px;
+}
+#container {
+  /* border: 5px solid rgba(0, 0, 0, 0.18); */
+  padding: 25px;
+  border-radius: 10px;
+  background-color: #f1f0f7;
+  box-shadow: -5px -3px 10px rgba(84, 84, 84, 0.781) inset;
+}
+#display {
+  width: 340px;
+  font-size: 40px;
+  padding: 30px 21px;
+  border: none;
+  text-align: right;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  /* background-color: transparent; */
+  background-color: #ffffff;
+  color: black;
+  box-shadow: 0 3px 15px rgba(84, 84, 84, 0.781) inset;
+  pointer-events: none;
+}
+#keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+button {
+  padding: 14px 20px;
+  border: none;
+  border-radius: 100px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: -5px -5px 5px rgba(0, 0, 0, 0.527) inset;
+  background-color: #f1f0f7;
+}
+.calbtn {
+  background-color: #3f5e95;
+  color: white;
+}
+.funcbtn {
+  background-color: #dce1fc;
+  color: #3f5e95;
+}
+#mod {
+  border: none;
+  cursor: pointer;
+
+}

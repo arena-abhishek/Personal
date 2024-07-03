@@ -9,7 +9,7 @@ body {
   align-items: center;
   height: 100vh;
   flex-direction: column;
-  background-color:#fdfbfe;
+  background-color:#f1f0f7;
 }
 .heading{
     margin: 45px;
@@ -57,4 +57,8 @@ body {
 .funcbtn {
   background-color: #dce1fc;
   color: #3f5e95;
+}
+#mod{
+  border: none;
+  cursor: pointer;
 }
