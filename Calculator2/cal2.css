@@ -26,7 +26,7 @@ body {
   position: absolute;
   top: 30px;
   right: 30px;
-  color: #fff;
+  /* color: #fff; */
   cursor: pointer;
   z-index: 1;
 }
@@ -36,7 +36,7 @@ body {
 }
 
 .mod.active::before {
-  background-color: #fff;
+  /* background-color: #fff; */
 }
 .mod::before {
   content: "";
@@ -46,7 +46,7 @@ body {
   top: 50%;
   transform: translate(-50%, -50%);
   border-radius: 50%;
-  background-color: #333;
+  /* background-color: #333; */
   z-index: -1;
 }
 
@@ -90,7 +90,7 @@ button {
   height: 60px;
   width: 60px;
   border: none;
-  border-radius: 50px;
+  border-radius: 20px;
   font-size: 1.5rem;
   cursor: pointer;
   box-shadow: -5px -5px 5px rgba(0, 0, 0, 0.527) inset;

@@ -7,8 +7,8 @@ const funcbtn = document.querySelector(".funcbtn");
 let calbtn = document.querySelector(".calbtn");
 const mod = document.querySelector(".mod");
 let body = document.querySelector("body");
-let moon = document.querySelector(".mod").firstElementChild;
-let sun = document.querySelector(".mod").lastElementChild;
+let sun = document.querySelector(".mod").firstElementChild;
+let moon = document.querySelector(".mod").lastElementChild;
 
 let string = "";
 
@@ -47,10 +47,14 @@ button.forEach((calci) => {
 let isDark = true;
 mod.onclick = () => {
   if(body.style.background != "white"){
-    body.style.background = "white"
+    body.style.background = "white";
+    sun.style.display = "none";
+    moon.style.display = "block";
   }
   else{
-    body.style.background = "black"
+    body.style.background = "black";
+    sun.style.display = "block";
+    moon.style.display = "none";
   }
   container.classList.toggle("dark");
   mod.classList.toggle("active");
