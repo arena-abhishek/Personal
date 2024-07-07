@@ -10,11 +10,11 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-   /* margin: auto;  */
+  /* margin: auto; */
 }
 
 .clock-container {
-  /* margin: auto; */
+  margin: auto;
   text-align: center;
   position: relative;
   display: flex;
@@ -57,7 +57,6 @@ body {
   background: black;
   border-radius: 4px;
   transform-origin: bottom;
-  
   /* transition: all 1s; */
 }
 
