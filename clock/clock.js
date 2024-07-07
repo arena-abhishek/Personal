@@ -1,31 +1,31 @@
-let hour = document.getElementById("hourhand");
-let min = document.getElementById("minhand");
-let sec = document.getElementById("sechand");
-let hh = document.querySelector("#hh");
-let mm = document.querySelector("#mm");
-let ss = document.querySelector("#ss");
+let hourHand = document.getElementById("hourhand");
+let minHand = document.getElementById("minhand");
+let secHand = document.getElementById("sechand");
+let hhDisplay = document.getElementById("hh");
+let mmDisplay = document.getElementById("mm");
+let ssDisplay = document.getElementById("ss");
 
-setInterval(() => {
-  // console.log('abhishek')
-  let d = new Date();
-  let mtime = d.getMinutes() * 6;
-  let stime = d.getSeconds() * 6;
-  let htime = d.getHours() * 30 + Math.round(mtime / 2);
-  min.style.transform = `rotate(${mtime}deg);`;
-  sec.style.transform = `rotate(${stime}deg);`;
-  hour.style.transform = `rotate(${htime}deg);`;
 
-  // digital clock
-  let hours = new Date().getHours();
-  let minutes = new Date().getMinutes();
-  let seconds = new Date().getSeconds();
+  let intervalId = setInterval(() => {
+    let now = new Date();
+    let minutes = now.getMinutes() * 6;
+    let seconds = now.getSeconds() * 6;
+    let hours = now.getHours() * 30 + Math.round(minutes / 2);
 
-  // add zero to single digit numbers
-  hours = hours < 10 ? "0" + hours : hours;
-  minutes = minutes < 10 ? "0" + minutes : minutes;
-  seconds = seconds < 10 ? "0" + seconds : seconds;
+    minHand.style.transform = `rotate(${minutes}deg)`;
+    secHand.style.transform = `rotate(${seconds}deg)`;
+    hourHand.style.transform = `rotate(${hours}deg)`;
 
-  hh.innerHTML = hours;
-  mm.innerHTML = minutes;
-  ss.innerHTML = seconds;
-}, 1000);
+    let hoursDisplay = now.getHours();
+    let minutesDisplay = now.getMinutes();
+    let secondsDisplay = now.getSeconds();
+
+    hoursDisplay = hoursDisplay < 10 ? "0" + hoursDisplay : hoursDisplay;
+    minutesDisplay = minutesDisplay < 10 ? "0" + minutesDisplay : minutesDisplay;
+    secondsDisplay = secondsDisplay < 10 ? "0" + secondsDisplay : secondsDisplay;
+
+    hhDisplay.innerHTML = hoursDisplay;
+    mmDisplay.innerHTML = minutesDisplay;
+    ssDisplay.innerHTML = secondsDisplay;
+  }, 1000);
+
