@@ -10,7 +10,7 @@ let ssDisplay = document.getElementById("ss");
     let now = new Date();
     let minutes = now.getMinutes() * 6;
     let seconds = now.getSeconds() * 6;
-    let hours = now.getHours() * 30 + Math.round(minutes / 2);
+    let hours = now.getHours() * 30 + Math.round(minutes / 12);
 
     minHand.style.transform = `rotate(${minutes}deg)`;
     secHand.style.transform = `rotate(${seconds}deg)`;
