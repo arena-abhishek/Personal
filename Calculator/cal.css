@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  background-color:#f1f0f7;
+}
+.heading{
+    margin: 45px;
+}
+#mod{
+
+}
+/* #container {
+  display: flex;
+  justify-content: center;
+} */
+#screen {
+  border: none;
+  width: 334px;
+  border-radius:2%;
+  font-size: 2rem;
+  padding: 30px 21px;
+  margin-bottom: 20px;
+  box-shadow: 0 3px 15px rgba(84, 84, 84, 0.781);
+  text-align: right;
+  color: black;
+}
+#btn {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  text-align: center;
+}
+
+.button {
+  background-color: #f1f0f7;
+  color: black;
+  border: none;
+  border-radius: 35%;
+  padding: 14px 20px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 3px 5px grey;
+}
+
+.calbtn {
+  background-color: #3f5e95;
+  color: white;
+}
+.funcbtn {
+  background-color: #dce1fc;
+  color: #3f5e95;
+}
+#mod{
+  border: none;
+  cursor: pointer;
+}
