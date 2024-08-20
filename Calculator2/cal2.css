@@ -1,0 +1,197 @@
+*/ {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.5s ease;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+  gap: 70px;
+}
+.container {
+  width: 330px;
+  padding: 25px;
+  border-radius: 10px;
+  background-color: #f1f0f7;
+  box-shadow: -5px -3px 10px rgba(84, 84, 84, 0.781) inset;
+  position: relative;
+  /* height: auto; */
+}
+.mod {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  /* color: #fff; */
+  cursor: pointer;
+  z-index: 1;
+}
+
+.mod.active {
+  color: #333;
+}
+
+.mod.active::before {
+  /* background-color: #fff; */
+}
+.mod::before {
+  content: "";
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  /* background-color: #333; */
+  z-index: -1;
+}
+
+#screen {
+  /* position: relative; */
+  /* width: 300px; */
+  font-size: 40px;
+  padding: 30px 21px;
+  border: none;
+  text-align: right;
+  margin-bottom: 20px;
+  margin-top: 40px;
+  border-radius: 10px;
+  /* background-color: #ffffff; */
+  /* color: black; */
+  box-shadow: 0 3px 15px rgba(84, 84, 84, 0.781) inset;
+  pointer-events: none;
+  overflow: hidden;
+}
+/* #result {
+  text-align: right;
+  width: 340px;
+  border: none;
+  font-size: 40px;
+  background-color: #ffffff;
+  display: none;
+} */
+#display {
+  text-align: left;
+  width: 290px;
+  border: none;
+  font-size: 40px;
+  background-color: #ffffff;
+}
+#keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+button {
+  height: 60px;
+  width: 60px;
+  border: none;
+  border-radius: 20px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: -5px -5px 5px rgba(0, 0, 0, 0.527) inset;
+  background-color: #f1f0f7;
+  transition: all 200ms ease;
+}
+button:hover {
+  transform: scale(1.1);
+}
+
+/* light theme */
+
+.container {
+  background-color: #f1f0f7;
+}
+
+.container #screen {
+  background-color: #fff;
+  color: black;
+}
+.container #display {
+  background-color: #fff;
+  color: black;
+}
+
+.container button.btn {
+  background-color: #f1f0f7;
+  color: black;
+}
+
+.container button.calbtn {
+  background-color: #3f5e95;
+  color: white;
+}
+.container button.funcbtn {
+  background-color: #dce1fc;
+  color: #3f5e95;
+}
+
+/* dark theme */
+
+.container.dark {
+  background-color: black;
+}
+
+.container.dark #screen {
+  background-color: black;
+  color: #f8fafb;
+}
+.container.dark #display {
+  background-color: black;
+  color: #f8fafb;
+}
+
+.container.dark button.btn {
+  background-color: #2f2f38;
+  color: #f8fafb;
+}
+
+.container.dark button.funcbtn {
+  background-color: #3d465b;
+  color: #a8c1f2;
+}
+
+.container.dark button.calbtn {
+  background-color: #a7c6f3;
+  color: #ffffff;
+}
+/* #mod {
+  border: none;
+  cursor: pointer;
+} */
+@media only screen and (min-width: 320px) and (max-width: 400px) {
+  */{
+    transition: all 1s ease;
+  }
+  .container {
+    width: 255px;
+  }
+  #display {
+    width: 209px;
+  }
+
+  button {
+    height: 52px;
+    width: 55px;
+  }
+}
+@media only screen and (min-width: 300px) and (max-width: 320px) {
+  */{
+    transition: all 1s ease;
+  }
+  .container {
+    width: 255px;
+  }
+  #display {
+    width: 209px;
+  }
+
+  button {
+    height: 52px;
+    width: 55px;
+  }
+}

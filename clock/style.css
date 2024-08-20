@@ -1,0 +1,106 @@
+*/ {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #fafafa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  /* margin: auto; */
+}
+
+.clock-container {
+  margin: auto;
+  text-align: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.clock {
+  position: relative;
+  margin: auto;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  border: 10px solid #af855c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.clock .t {
+  position: absolute;
+  text-align: center;
+  inset: 0;
+  color: #af855c;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.8);
+  transform: rotate(calc(30deg * var(--i)));
+}
+
+.clock h3 {
+  font-size: 2rem;
+  display: inline-block;
+  font-weight: 800;
+  transform: rotate(calc(-30deg * var(--i)));
+}
+
+#hourhand,
+#minhand,
+#sechand {
+  position: absolute;
+  background: black;
+  border-radius: 4px;
+  transform-origin: bottom;
+  /* transition: all 1s; */
+}
+
+.clock-container #hourhand {
+  width: 2%;
+  height: 37%;
+  top: 83px;
+  left: 304px;
+  background: #af855c;
+}
+.clock-container #minhand {
+  width: 2%;
+  height: 46%;
+  top: 27px;
+  left: 304px;
+  background: #af855c;
+}
+.clock-container #sechand {
+  width: 2%;
+  height: 40%;
+  top: 64px;
+  left: 304px;
+  background: #af855c;
+}
+
+.clock-container .digital-clock {
+  position: absolute;
+  /* border: 1px solid #af855c; */
+  color: #af855c;
+  top: 63%;
+  right: 31%;
+  display: flex;
+  gap: 20px;
+  font-size: 4rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.digital-clock div:nth-child(1)::after,
+.digital-clock div:nth-child(2)::after {
+  content: ":";
+  position: absolute;
+  /* right: -4px; */
+  bottom: 6px;
+}
+
+
