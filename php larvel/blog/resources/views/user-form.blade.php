@@ -1,5 +1,5 @@
 <div>
-    <h1>Form in laravel</h1>
+    <h1>Form in Laravel</h1>
     <h2>Add new user</h2>
 
     <div>
@@ -10,24 +10,25 @@
         @endif -->
     </div>
 
-    <form action="addUser" method="post">
+    <form action="/addUser" method="post">
         @csrf
         <div class="input-form">
-            <input type="text" placeholder="enter username " name="username" value="{{ old('username') }}"
-                class="{{$errors—>first('username') ? ' input—error' : '' }}">
+            <input type="text" placeholder="Enter username" name="username" value="{{ old('username') }}"
+                class="{{ $errors->first('username') ? 'input-error' : '' }}">
             <span style="color: red">@error('username') {{ $message }} @enderror</span>
         </div>
         <div class="input-form">
-            <input type="text" placeholder="enter city " name="city" value="{{ old('city') }}">
+            <input type="text" placeholder="Enter city" name="city" value="{{ old('city') }}"
+                class="{{ $errors->first('city') ? 'input-error' : '' }}">
             <span style="color: red">@error('city') {{ $message }} @enderror</span>
         </div>
         <div class="input-form">
-            <input type="text" placeholder="enter email " name="email" value="{{ old('email') }}">
+            <input type="text" placeholder="Enter email" name="email" value="{{ old('email') }}"
+                class="{{ $errors->first('email') ? 'input-error' : '' }}">
             <span style="color: red">@error('email') {{ $message }} @enderror</span>
         </div>
 
-
-        <h4>User Skills</h4>
+        <!--   <h4>User Skills</h4>
         <input type="checkbox" name="skill[]" id="php" value="php">
         <label for="php">PHP</label>
         <input type="checkbox" name="skill[]" id="java" value="java">
@@ -51,28 +52,28 @@
         <h4>User City</h4>
         <select name="citySelect" id="">
             <option value="delhi">Delhi</option>
-            <option value="gurgoan">Gurgoan</option>
+            <option value="gurgaon">Gurgaon</option>
             <option value="mumbai">Mumbai</option>
-        </select>
+        </select> -->
 
         <div class="input-form">
-            <button>Add new user</button>
+            <button type="submit">Add new user</button>
+        </div>
     </form>
 
     <style>
         input {
             color: orange;
-            border: lpx solid •orange;
+            border: 1px solid orange;
             height: 35px;
             width: 200px;
             border-radius: 2px;
             margin: 10px;
-
         }
 
         button {
             color: orange;
-            border: lpx solid •orange;
+            border: 1px solid orange;
             height: 35px;
             width: 200px;
             border-radius: 2px;
@@ -81,8 +82,8 @@
             cursor: pointer;
         }
 
-        .input—error {
-            border: lpx solid red;
+        .input-error {
+            border: 1px solid red;
             color: red;
         }
     </style>
