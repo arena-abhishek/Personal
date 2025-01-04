@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use Illuminate\Support\Facades\DB;
 class UserController extends Controller
 {
     //
@@ -70,5 +70,10 @@ class UserController extends Controller
             'email.email' => 'this email is not valid ',
             'city.uppercase' => 'City should be in upper case only',
         ]);
+    }
+
+    function users(){
+        $users = DB::select('select * from users');
+        return view('users', ['users' => $users]);
     }
 }
