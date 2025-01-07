@@ -63,4 +63,4 @@ Route::controller(StudentController::class)->group(function () {
 Route::view('about2', 'about2')->middleware(AgeCheck2::class, CountryCheck::class);
 
 Route::get('users', [UserController::class, 'users']);
-Route::get('student', [StudentController2::class, 'getStudents']);
+Route::get('students', [StudentController2::class, 'getStudents']);

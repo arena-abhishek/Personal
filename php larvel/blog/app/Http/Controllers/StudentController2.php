@@ -11,6 +11,6 @@ class StudentController2 extends Controller
     function getStudents()
     {
         $students = \App\Models\Student::all();
-        return "test function";
+        return view('students', ['data'=>$students]);
     }
 }
