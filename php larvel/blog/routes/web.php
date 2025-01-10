@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\UserController2;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\HomeController2;
 use App\Http\Controllers\StudentController;
@@ -64,3 +65,5 @@ Route::view('about2', 'about2')->middleware(AgeCheck2::class, CountryCheck::clas
 
 Route::get('users', [UserController::class, 'users']);
 Route::get('students', [StudentController2::class, 'getStudents']);
+
+Route::get('userController2', [UserController2::class, 'getUser']);
