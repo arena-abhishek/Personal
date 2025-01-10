@@ -16,8 +16,10 @@
   <div class="container">
     <div class="row d-flex justify-content-center">
         @if (session('success'))
-        <div class="col-md-10">
-            {{session::get('success')}}
+        <div class="col-md-10 mt-4">
+            <div class="alert alert-success">
+                {{session::get('success')}}
+            </div>
         </div>
         @endif
         <div class="col-md-10">
