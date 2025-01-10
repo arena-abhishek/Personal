@@ -16,7 +16,7 @@
 	<div class="container">
 		<div class="row justify-content-center mt-4">
 			<div class="col-md-10 d-flex-justify-content-end">
-				<a href="{{route('products.index')}}" class="btn  btn-dark">Back</a>
+				<a href="{{route('products.edit')}}" class="btn  btn-dark">Back</a>
 			</div>
 			<div class="row d-flex justify-content-center">
 				<div class="col-md-10">
