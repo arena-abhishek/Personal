@@ -14,13 +14,17 @@
     <h1 class="text-center text-white">Simple Laravel 11 CRUD</h1>
   </div>
   <div class="container">
+  <div class="row justify-content-center mt-4">
+      <div class="col-md-10 d-flex-justify-content-end">
+        <a href="{{route('products.index')}}" class="btn  btn-dark">Back</a>
+      </div>
     <div class="row d-flex justify-content-center">
       <div class="col-md-10">
         <div class="card border-0 shadow-lg my-4">
           <div class="card-header bg-dark">
             <h3 class="text-white">Create Product</h3>
           </div>
-          <form action="{{route('products.store')}}" method="post">
+          <form enctype="multipart/form-data" action="{{route('products.store')}}" method="post">
             @csrf
             <div class="card-body">
               <div class="mb-3">
@@ -35,8 +39,8 @@
               <div class="mb-3">
                 <label for="" class="form-label h5">Sku</label>
                 <input type="text" value="{{old('sku')}}"
-                  class=" @error('sku') is-invalid @enderror form-control form-control-lg" placeholder="Enter Name"
-                  name="name">
+                  class=" @error('sku') is-invalid @enderror form-control form-control-lg" placeholder="Enter Sku"
+                  name="sku">
                 @error('sku')
           <p class="invalid-feedback">{{$message}}</p>
         @enderror
