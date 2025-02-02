@@ -14,6 +14,7 @@ class ProductController extends Controller
 	public function index()
 	{
 		$products = Product::orderBy('created_at', 'DESC')->get();
+
 		return view('products.list', [
 			'products' => $products
 		]);
@@ -39,8 +40,9 @@ class ProductController extends Controller
 		}
 
 		$validator = Validator::make($request->all(), $rules);
+
 		if ($validator->fails()) {
-			return redirect()->route('products.create')->withErrors($validator)->withInput();
+			return redirect()->route('products.create')->withInput()->withErrors($validator);
 		}
 
 		// here we will store or insert the product
@@ -49,12 +51,11 @@ class ProductController extends Controller
 		$product->sku = $request->sku;
 		$product->price = $request->price;
 		$product->description = $request->description;
-		$product->image = $request->image;
 		$product->save();
 
 		if ($request->image != "") {
 			// here we will store the image
-			$image = $request->file('image');
+			$image = $request->image;
 			$ext = $image->getClientOriginalExtension();
 			$imageName = time() . '.' . $ext; // unique image name
 
@@ -80,6 +81,7 @@ class ProductController extends Controller
 	public function update($id, Request $request)
 	{
 		$product = Product::findOrFail($id);
+
 		$rules = [
 			'name' => 'required|min:5',
 			'sku' => 'required|min:3',
@@ -92,7 +94,7 @@ class ProductController extends Controller
 
 		$validator = Validator::make($request->all(), $rules);
 		if ($validator->fails()) {
-			return redirect()->route('products.edit')->withErrors($validator)->withInput();
+			return redirect()->route('products.edit')->withInput()->withErrors($validator);
 		}
 
 		// here we will update the product
@@ -100,7 +102,6 @@ class ProductController extends Controller
 		$product->sku = $request->sku;
 		$product->price = $request->price;
 		$product->description = $request->description;
-		$product->image = $request->image;
 		$product->save();
 
 		if ($request->image != "") {

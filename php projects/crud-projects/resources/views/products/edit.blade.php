@@ -15,8 +15,8 @@
 	</div>
 	<div class="container">
 		<div class="row justify-content-center mt-4">
-			<div class="col-md-10 d-flex-justify-content-end">
-				<a href="{{route('products.edit')}}" class="btn  btn-dark">Back</a>
+			<div class="col-md-10 d-flex justify-content-end">
+				<a href="{{route('products.index')}}" class="btn  btn-dark">Back</a>
 			</div>
 			<div class="row d-flex justify-content-center">
 				<div class="col-md-10">
@@ -24,7 +24,7 @@
 						<div class="card-header bg-dark">
 							<h3 class="text-white">Create Product</h3>
 						</div>
-						<form enctype="multipart/form-data" action="{{route('products.update',$product->id)}}" method="post">
+						<form enctype="multipart/form-data" action="{{route('products.update', $product->id)}}" method="post">
 							@method('put')
 							@csrf
 							<div class="card-body">
@@ -63,9 +63,9 @@
 								<div class="mb-3">
 									<label for="" class="form-label h5">Image</label>
 									<input type="file" class="form-control form-control-lg" placeholder="" name="image">
+
 									@if ($product->image != "")
-										<img class="w-50" src="{{asset('uploads/products/' . $product->image)}}" width="50px" height="50px"
-											alt="">
+										<img class="w-50 my-3" src="{{asset('uploads/products/' . $product->image)}}" alt="">
 									@endif
 								</div>
 								<div class="d-grid">
