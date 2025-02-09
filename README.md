@@ -8,3 +8,7 @@
  https://arena-abhishek.github.io/Personal/Javascript30%20days%20challenge/custom%20video%20player
  https://arena-abhishek.github.io/Personal/Javascript30%20days%20challenge/fun%20with%20html%20canvas
  https://arena-abhishek.github.io/Personal/Javascript30%20days%20challenge/flex%20panels%20image%20gallery
+ https://arena-abhishek.github.io/Personal/week%20cards/choco%20day/varaint%20one%20-%20Copy
+ https://arena-abhishek.github.io/Personal/week%20cards/choco%20day/varaint%20one
+ https://arena-abhishek.github.io/Personal/week%20cards/choco%20day/varaint%20two
+ https://arena-abhishek.github.io/Personal/week%20cards/choco%20day/varaint%20three
