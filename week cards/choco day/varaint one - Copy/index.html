@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Chocolate Day, My Love! 💝</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@400;600&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div class="sparkles"></div>
+    
+    <button id="musicToggle" class="music-toggle">🎵</button>
+    <audio id="bgMusic" loop>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="container">
+        <div class="initial-message">
+            <div class="envelope-3d">
+                <div class="envelope-front">
+                    <div class="heart-seal">💝</div>
+                    <h1>To My Sweetheart</h1>
+                    <div class="envelope-decoration">
+                        <span>❤️</span>
+                        <span>💝</span>
+                        <span>💖</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="message-content hidden">
+            <div class="love-letter">
+                <div class="letter-header">
+                    <img src="https://images.unsplash.com/photo-1518199266791-5375a83190b7?w=500" alt="Romantic Rose" class="letter-image">
+                </div>
+                <div class="romantic-text">My Dearest Love,</div>
+                <div class="romantic-text">On this sweet Chocolate Day, I want to tell you how much sweetness you bring to my life. You're the most delicious part of my world! 🍫</div>
+                <div class="romantic-text">Every moment with you is as rich as dark chocolate, as smooth as milk chocolate, and as precious as white chocolate.</div>
+                <div class="letter-footer">
+                    <img src="https://images.unsplash.com/photo-1581343109297-b0723185017b?w=500" alt="Chocolate Heart" class="footer-image">
+                </div>
+            </div>
+        </div>
+
+        <div class="chocolate-box hidden">
+            <div class="box-lid">
+                <div class="ribbon">Sweet Messages</div>
+            </div>
+            <div class="chocolates-grid">
+                <div class="piece" data-message="You're sweeter than all the chocolate in the world! 🍫">
+                    <img src="https://images.unsplash.com/photo-1549007994-cb92caebd54b?w=200" alt="Chocolate 1">
+                </div>
+                <div class="piece" data-message="Every piece of chocolate reminds me of your sweet smile! 😊">
+                    <img src="https://images.unsplash.com/photo-1606312619070-d48b4c652a52?w=200" alt="Chocolate 2">
+                </div>
+                <div class="piece" data-message="You melt my heart like chocolate melts in warmth! ❤️">
+                    <img src="https://images.unsplash.com/photo-1582176604856-e824b4736522?w=200" alt="Chocolate 3">
+                </div>
+                <div class="piece" data-message="Life is like a box of chocolates, and I'm so glad I chose you! 💝">
+                    <img src="https://images.unsplash.com/photo-1548907040-4baa42d10919?w=200" alt="Chocolate 4">
+                </div>
+                <div class="piece" data-message="You're the chocolate to my strawberry! 🍓">
+                    <img src="https://images.unsplash.com/photo-1614707267537-b85aaf00c4b7?w=200" alt="Chocolate 5">
+                </div>
+                <div class="piece" data-message="Together forever, like milk and chocolate! 🥛">
+                    <img src="https://images.unsplash.com/photo-1587132137056-bfbf0166836e?w=200" alt="Chocolate 6">
+                </div>
+            </div>
+        </div>
+
+        <div class="memories-section hidden">
+            <h2 class="memories-title">Our Sweet Memories</h2>
+            <div class="polaroid-gallery">
+                <div class="polaroid">
+                    <div class="polaroid-content">
+                        <img src="https://source.unsplash.com/400x300/?couple,romantic" alt="Sweet Memory 1">
+                        <div class="polaroid-caption">Our First Date ❤️</div>
+                    </div>
+                </div>
+                <div class="polaroid">
+                    <div class="polaroid-content">
+                        <img src="https://source.unsplash.com/400x300/?love,romantic" alt="Sweet Memory 2">
+                        <div class="polaroid-caption">Movie Night 🎬</div>
+                    </div>
+                </div>
+                <div class="polaroid">
+                    <div class="polaroid-content">
+                        <img src="https://source.unsplash.com/400x300/?chocolate,dessert" alt="Sweet Memory 3">
+                        <div class="polaroid-caption">Chocolate Time 🍫</div>
+                    </div>
+                </div>
+                <div class="polaroid">
+                    <div class="polaroid-content">
+                        <img src="https://source.unsplash.com/400x300/?sunset,couple" alt="Sweet Memory 4">
+                        <div class="polaroid-caption">Sunset Walk 🌅</div>
+                    </div>
+                </div>
+                <div class="polaroid">
+                    <div class="polaroid-content">
+                        <img src="https://source.unsplash.com/400x300/?flowers,gift" alt="Sweet Memory 5">
+                        <div class="polaroid-caption">Special Surprises 🎁</div>
+                    </div>
+                </div>
+                <div class="polaroid">
+                    <div class="polaroid-content">
+                        <img src="https://source.unsplash.com/400x300/?cafe,coffee" alt="Sweet Memory 6">
+                        <div class="polaroid-caption">Coffee Dates ☕</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="final-message hidden">
+            <div class="final-text">
+                <h2>Happy Chocolate Day, My Love!</h2>
+                <p>You make every day sweeter than chocolate! 🍫💝</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="navigation-buttons hidden">
+        <button class="prev-btn">Previous</button>
+        <button class="next-btn">Next</button>
+    </div>
+
+    <div class="floating-hearts-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

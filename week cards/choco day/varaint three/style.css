@@ -1,0 +1,237 @@
+:root {
+    --chocolate-brown: #3c1f0c;
+    --gold: #ffd700;
+    --light-gold: #ffe55c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #1a0f07 0%, #3c1f0c 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    position: relative;
+}
+
+.twinkling-hearts {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.chocolate-box {
+    width: 300px;
+    height: 200px;
+    margin: 50px auto;
+    position: relative;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease;
+}
+
+.box-lid, .box-bottom {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #4a2512, #2c1810);
+    border: 2px solid var(--gold);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+}
+
+.box-lid {
+    transform-origin: top;
+    transition: transform 1s ease;
+}
+
+.box-lid.open {
+    transform: rotateX(-180deg);
+}
+
+.chocolates {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+
+.chocolate {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #2c1810, #1a0f07);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+.chocolate:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+}
+
+.golden-ticket {
+    background: linear-gradient(45deg, var(--gold), var(--light-gold));
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: var(--chocolate-brown);
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5rem;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+}
+
+.love-story {
+    margin: 30px 0;
+    text-align: center;
+}
+
+.story-slides {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+.slide {
+    min-width: 100%;
+    padding: 20px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.8rem;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.love-letter {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 30px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.letter-content {
+    position: relative;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.love-counter {
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--gold);
+    margin: 20px 0;
+}
+
+.final-note {
+    text-align: center;
+    margin: 40px 0;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+}
+
+.handwritten {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+    color: var(--gold);
+    margin-bottom: 20px;
+}
+
+.message {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.signature {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.8rem;
+    color: var(--gold);
+}
+
+.hidden {
+    display: none;
+}
+
+/* Animation Classes */
+.fade-in {
+    animation: fadeIn 1s ease forwards;
+}
+
+.float {
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .chocolate-box {
+        width: 250px;
+        height: 170px;
+    }
+
+    .handwritten {
+        font-size: 2rem;
+    }
+
+    .message {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .chocolate-box {
+        width: 200px;
+        height: 140px;
+    }
+
+    .golden-ticket {
+        font-size: 1.2rem;
+    }
+
+    .handwritten {
+        font-size: 1.8rem;
+    }
+}

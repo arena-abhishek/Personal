@@ -1,19 +1,21 @@
-import React from "react";
+import React, { useState } from "react"; // Import useState from React
 import "./App.css";
-import Card from "./components/card"; 
+import Card from './components/Card'
 
 function App() {
+  const [count, setCount] = useState(0); // Use state properly
+
   let myObj = {
-    username: "Hitesh Choudhary",
-    age: 25,
-    country: "India",
+    username: "hitesh",
+    age: 21
   };
+  let newArr = [1, 2, 3];
 
   return (
     <>
-      <h1 className="bg-green-400 text-black p-4 rounded-xl">Tailwind test</h1>
-      <Card username={myObj.username} btntxt="Click Me" />
-      <Card username={myObj.username} />
+      <h1 className='bg-green-400 text-black p-4 rounded-xl mb-4'>Tailwind test</h1>
+      <Card username="chaiaurcode" btnText="click me" />
+      <Card username="hitesh" />
     </>
   );
 }

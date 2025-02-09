@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#3B1C12">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Happy Chocolate Day, My Love! 🍫❤️</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="card-wrapper">
+            <div class="chocolate-box" id="chocolateBox">
+                <div class="box-lid"></div>
+                <div class="box-bottom"></div>
+                <div class="instruction">Tap to Unwrap</div>
+            </div>
+
+            <div class="content hidden" id="mainContent">
+                <div class="love-counter">
+                    <span id="daysCount">0</span>
+                    <span class="days-text">Days of Love</span>
+                </div>
+
+                <div class="message-container">
+                    <div class="polaroid">
+                        <div class="photo-frame">
+                            <div class="heart-container">
+                                <div class="heart"></div>
+                            </div>
+                        </div>
+                        <p class="personal-message">
+                            Every chocolate in the world is nothing compared to your sweetness, my love! 🍫❤️
+                        </p>
+                    </div>
+                </div>
+
+                <div class="floating-letter hidden" id="floatingLetter">
+                    <div class="letter-content">
+                        <p>Every day with you is sweeter than the last.</p>
+                        <p>Happy Chocolate Day, my love!</p>
+                        <p>Forever yours. ❤️</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="chocolate-drips">
+            <div class="drip"></div>
+            <div class="drip"></div>
+            <div class="drip"></div>
+        </div>
+
+        <div class="cocoa-dust"></div>
+    </div>
+
+    <audio id="bgMusic" loop>
+        <source src="https://assets.mixkit.co/music/preview/mixkit-romantic-light-piano-sound-2642.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
