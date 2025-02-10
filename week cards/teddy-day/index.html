@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Teddy Day My Love! 🧸❤️</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="floating-hearts"></div>
+        <div class="music-controls">
+            <button id="toggleMusic" class="music-button">
+                <span class="music-icon">🎵</span>
+            </button>
+        </div>
+        <div class="teddy-container">
+            <div class="teddy">
+                <div class="bow">
+                    <div class="bow-left"></div>
+                    <div class="bow-right"></div>
+                    <div class="bow-center">❤️</div>
+                </div>
+                <div class="ears">
+                    <div class="ear left">
+                        <div class="ear-inner"></div>
+                        <div class="ear-fluff"></div>
+                    </div>
+                    <div class="ear right">
+                        <div class="ear-inner"></div>
+                        <div class="ear-fluff"></div>
+                    </div>
+                </div>
+                <div class="face">
+                    <div class="eyes">
+                        <div class="eye left">
+                            <div class="eye-shine"></div>
+                            <div class="eye-lid"></div>
+                            <div class="eye-lash"></div>
+                        </div>
+                        <div class="eye right">
+                            <div class="eye-shine"></div>
+                            <div class="eye-lid"></div>
+                            <div class="eye-lash"></div>
+                        </div>
+                    </div>
+                    <div class="nose">
+                        <div class="nose-shine"></div>
+                    </div>
+                    <div class="cheeks">
+                        <div class="cheek left"></div>
+                        <div class="cheek right"></div>
+                    </div>
+                    <div class="mouth">
+                        <div class="mouth-inner"></div>
+                    </div>
+                    <div class="whiskers">
+                        <div class="whisker-set left">
+                            <div class="whisker"></div>
+                            <div class="whisker"></div>
+                            <div class="whisker"></div>
+                        </div>
+                        <div class="whisker-set right">
+                            <div class="whisker"></div>
+                            <div class="whisker"></div>
+                            <div class="whisker"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="body">
+                    <div class="arms">
+                        <div class="arm left">
+                            <div class="paw">
+                                <div class="paw-pad"></div>
+                            </div>
+                        </div>
+                        <div class="arm right">
+                            <div class="paw">
+                                <div class="paw-pad"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tummy">
+                        <div class="tummy-patch"></div>
+                        <div class="heart-patch">❤️</div>
+                        <div class="fur-texture"></div>
+                    </div>
+                    <div class="legs">
+                        <div class="leg left">
+                            <div class="foot">
+                                <div class="toe"></div>
+                                <div class="toe"></div>
+                                <div class="toe"></div>
+                            </div>
+                        </div>
+                        <div class="leg right">
+                            <div class="foot">
+                                <div class="toe"></div>
+                                <div class="toe"></div>
+                                <div class="toe"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="message-container">
+            <h1 class="main-title">Happy Teddy Day!</h1>
+            <p class="love-message">My love, if I could, I'd give you the softest teddy in the world, but instead, here's a virtual one that hugs you just like I would. Happy Teddy Day! 🧸❤️</p>
+        </div>
+
+        <div class="buttons">
+            <button id="hugButton" class="action-button">
+                <span class="button-icon">🤗</span>
+                Hug the Teddy
+            </button>
+            <button id="surpriseButton" class="action-button">
+                <span class="button-icon">✨</span>
+                Tap for Surprise
+            </button>
+        </div>
+
+        <div class="love-counter">
+            <div class="heart-container">
+                <div class="heart"></div>
+                <span id="daysCount">Loading...</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="hidden-message">
+        <div class="letter-content">
+            <p>I may not always be there to cuddle you,</p>
+            <p>but my love will always be wrapped around you</p>
+            <p>like the warmest hug.</p>
+            <p class="signature">Happy Teddy Day, my love! ❤️</p>
+        </div>
+    </div>
+
+    <!-- Audio Elements -->
+    <audio id="bgMusic" loop>
+        <source src="https://www.chosic.com/wp-content/uploads/2023/07/sweet-love.mp3" type="audio/mp3">
+    </audio>
+    <audio id="giggleSound">
+        <source src="https://www.soundjay.com/human/sounds/giggle-01.mp3" type="audio/mp3">
+    </audio>
+    <audio id="heartSound">
+        <source src="https://www.soundjay.com/button/sounds/button-09.mp3" type="audio/mp3">
+    </audio>
+    <audio id="hugSound">
+        <source src="https://www.soundjay.com/human/sounds/kiss-01.mp3" type="audio/mp3">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>

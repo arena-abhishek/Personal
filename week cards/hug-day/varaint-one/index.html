@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Warmest Hug To You ❤️</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="floating-hearts"></div>
+        <div class="sparkles"></div>
+        
+        <div class="main-content">
+            <div class="teddy-container">
+                <object data="images/teddy.svg" type="image/svg+xml" class="teddy" id="teddy"></object>
+            </div>
+
+            <div class="message-box">
+                <h1>Happy Hug Day, My Love! 🤗</h1>
+                <p class="main-message">My love, if I could, I'd wrap you in my arms right now. Feel this virtual hug—filled with all my love, warmth, and care.</p>
+            </div>
+
+            <div class="interaction-area">
+                <button class="hug-btn" id="hugButton">
+                    Give Me A Hug ❤️
+                    <span class="hug-counter">0 hugs shared</span>
+                </button>
+                
+                <button class="surprise-btn" id="surpriseButton">
+                    Close Your Eyes For A Surprise
+                </button>
+            </div>
+
+            <div class="love-quotes" id="loveQuotes">
+                <p>"In your arms, I've found my safe place. In your hugs, I've found my forever home."</p>
+                <p>"If hugs were measured in love, I'd give you an infinite one."</p>
+            </div>
+
+            <div class="final-message">
+                <p class="handwritten">You are my warmest hug, my safest place. No matter where we are, my love will always surround you.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="hug-overlay" id="hugOverlay">
+        <div class="hug-animation">
+            <div class="arms left-arm"></div>
+            <div class="arms right-arm"></div>
+        </div>
+    </div>
+
+    <div class="surprise-overlay" id="surpriseOverlay">
+        <div class="surprise-content">
+            <p>I can't wait to hold you in my arms again. Until then, this hug will have to do. Love you always! ❤️</p>
+        </div>
+    </div>
+
+    <audio id="bgMusic" loop>
+        <source src="sounds/soft-melody.mp3" type="audio/mp3">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>

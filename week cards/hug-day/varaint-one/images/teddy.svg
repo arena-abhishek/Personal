@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+    <!-- Body -->
+    <circle cx="100" cy="100" r="50" fill="#C17E61"/>
+    
+    <!-- Belly -->
+    <circle cx="100" cy="110" r="35" fill="#E6B89C"/>
+    
+    <!-- Head -->
+    <circle cx="100" cy="60" r="35" fill="#C17E61"/>
+    
+    <!-- Ears -->
+    <circle cx="70" cy="35" r="15" fill="#C17E61"/>
+    <circle cx="130" cy="35" r="15" fill="#C17E61"/>
+    <circle cx="70" cy="35" r="8" fill="#E6B89C"/>
+    <circle cx="130" cy="35" r="8" fill="#E6B89C"/>
+    
+    <!-- Eyes -->
+    <circle cx="85" cy="55" r="5" fill="#000000"/>
+    <circle cx="115" cy="55" r="5" fill="#000000"/>
+    <circle cx="83" cy="53" r="2" fill="#FFFFFF"/>
+    <circle cx="113" cy="53" r="2" fill="#FFFFFF"/>
+    
+    <!-- Nose -->
+    <circle cx="100" cy="65" r="8" fill="#8B4513"/>
+    
+    <!-- Mouth -->
+    <path d="M90,75 Q100,85 110,75" stroke="#8B4513" stroke-width="3" fill="none"/>
+    
+    <!-- Arms -->
+    <path d="M50,100 Q40,110 45,130" stroke="#C17E61" stroke-width="20" stroke-linecap="round" fill="none">
+        <animate attributeName="d" dur="2s" repeatCount="indefinite"
+            values="M50,100 Q40,110 45,130;M50,100 Q60,110 65,130;M50,100 Q40,110 45,130"
+            calcMode="spline" keySplines="0.4 0 0.2 1; 0.4 0 0.2 1"/>
+    </path>
+    <path d="M150,100 Q160,110 155,130" stroke="#C17E61" stroke-width="20" stroke-linecap="round" fill="none">
+        <animate attributeName="d" dur="2s" repeatCount="indefinite"
+            values="M150,100 Q160,110 155,130;M150,100 Q140,110 135,130;M150,100 Q160,110 155,130"
+            calcMode="spline" keySplines="0.4 0 0.2 1; 0.4 0 0.2 1"/>
+    </path>
+    
+    <!-- Heart -->
+    <g transform="translate(85,100) scale(0.5)">
+        <path d="M10,30 A20,20,0,0,1,50,30 A20,20,0,0,1,90,30 Q90,60,50,90 Q10,60,10,30 Z" fill="#FF6B95">
+            <animate attributeName="transform" dur="1s" repeatCount="indefinite"
+                values="scale(1);scale(1.1);scale(1)"
+                calcMode="spline" keySplines="0.4 0 0.2 1; 0.4 0 0.2 1"/>
+        </path>
+    </g>
+</svg>

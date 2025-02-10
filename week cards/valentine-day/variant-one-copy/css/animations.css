@@ -1,0 +1,105 @@
+/* Floating Elements Animations */
+.floating-heart,
+.floating-sparkle,
+.floating-petal {
+    position: fixed;
+    pointer-events: none;
+    animation: float-down linear infinite;
+    z-index: 0;
+}
+
+.floating-heart {
+    font-size: 24px;
+    animation-duration: 4s;
+}
+
+.floating-sparkle {
+    font-size: 20px;
+    animation-duration: 3s;
+}
+
+.floating-petal {
+    font-size: 16px;
+    animation-duration: 5s;
+}
+
+@keyframes float-down {
+    0% {
+        transform: translateY(-100vh) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* Heartbeat Effect */
+.heartbeat-effect {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    pointer-events: none;
+    z-index: 1000;
+    animation: heartbeat-pulse 1s ease-out;
+    opacity: 0;
+}
+
+.heartbeat-effect::before {
+    content: '❤️';
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes heartbeat-pulse {
+    0% {
+        transform: scale(0);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+/* Gift Box Animation */
+.gift-box {
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease;
+}
+
+.gift-box.opened {
+    transform: rotateX(180deg);
+}
+
+.gift-contents {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.gift-box.opened .gift-contents {
+    opacity: 1;
+}
+
+/* Surprise Message Animation */
+.surprise-message {
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Dancing Script', cursive;
+    color: var(--primary-color);
+    animation: message-appear 1s ease forwards;
+}
+
+@keyframes message-appear {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
