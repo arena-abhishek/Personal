@@ -11,7 +11,7 @@
  https://arena-abhishek.github.io/Personal/week-cards/choco-day/varaint-one-Copy
  https://arena-abhishek.github.io/Personal/week-cards/valentine-day/varaint-one-Copy
  https://arena-abhishek.github.io/Personal/week-cards/valentine-day/varaint-one
- https://arena-abhishek.github.io/Personal/week-cards/choco-day/varaint-one
+https://arena-abhishek.github.io/Personal/week-cards/choco-day/variant-one/
  https://arena-abhishek.github.io/Personal/week-cards/choco-day/varaint-two
  https://arena-abhishek.github.io/Personal/week-cards/choco-day/varaint-three
  https://arena-abhishek.github.io/Personal/week-cards/hug-day/varaint-one
